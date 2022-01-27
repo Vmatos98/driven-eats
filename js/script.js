@@ -6,4 +6,4 @@ function controleDePedido(id){
         document.getElementById("prato3").style.border = "1px solid #FFFFFF";
         document.getElementById(id).style.border = "5px solid #32B72F";
     }
-    
+}    
