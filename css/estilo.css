@@ -37,7 +37,7 @@
     width: 414px;
     height: calc(100vh - 93px);
     margin-top: 93px;
-    margin-bottom: 150px;
+    margin-bottom: 170px;
     
 }
 .corpo h2{
@@ -51,7 +51,7 @@
     color: #333333;
 }
 .pratos{
-    height: 216px;
+    
     margin-left: 19px;
     display: flex;
     
@@ -104,6 +104,17 @@
     position: absolute;
     bottom: 13px;
     left: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    
+}
+.fonte h5{
+    position: absolute;
+    bottom: 13px;
+    left: 36px;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
