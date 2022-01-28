@@ -179,4 +179,12 @@
     width: 364px;
     height: 61px;
     border-radius: 50px;
+    background: #CBCBCB;
+    text-align: center;
+}
+.barra-inferior p{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+    color: #FFFFFF;
 }

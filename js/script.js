@@ -1,9 +1,13 @@
+let valor1 = 0;     //valor do prato
+let valor2 = 0;     //valor da bebida
+let valor3 = 0;     //valor da sobremesa
 function controleDePedido(id){
   
-    let valor1 = 0;     //valor do prato
-    let valor2 = 0;     //valor da bebida
-    let valor3 = 0;     //valor da sobremesa
-    let valorTotal = 0; //valor total do pedido
+    
+    
+    
+    let valorTotal = 0; 
+    
 
     //caso o id pertença a algum prato
     if (id === "prato1" || id === "prato2" || id === "prato3"){
@@ -26,11 +30,28 @@ function controleDePedido(id){
         document.querySelector('#bebida2').style.border = "3px solid #FFFFFF";
         document.querySelector('#bebida3').style.border = "3px solid #FFFFFF";
         document.querySelector('#'+id).style.border = "3px solid #32B72F";
+        //obter valor da bebida
+        valor2 = document.querySelector('#'+id+' h4').textContent;
+        //separa o R$ do valor e o remover 
+        valor2 = valor2.split(" ", 2).splice(1);
+        //substituir a virgula por ponto e tornar um float
+        valor2 = parseFloat(valor2.toString().replace(',','.')); 
+        console.log(valor2);
     }
     if (id === "sobremesa1" || id === "sobremesa2" || id === "sobremesa3"){
         document.querySelector('#sobremesa1').style.border = "3px solid #FFFFFF";
         document.querySelector('#sobremesa2').style.border = "3px solid #FFFFFF";
         document.querySelector('#sobremesa3').style.border = "3px solid #FFFFFF";
         document.querySelector('#'+id).style.border = "3px solid #32B72F";
+        //obter valor da bebida
+        valor3 = document.querySelector('#'+id+' h4').textContent;
+        //separa o R$ do valor e o remover 
+        valor3 = valor3.split(" ", 2).splice(1);
+        //substituir a virgula por ponto e tornar um float
+        valor3 = parseFloat(valor3.toString().replace(',','.')); 
+        console.log(valor3);
     }
+    valorTotal = valor1+valor2+valor3; //valor total do pedido
+    valorTotal = valorTotal.toFixed(2);
+    console.log(valorTotal);
 }
