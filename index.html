@@ -16,9 +16,21 @@
     <div class="barra-topo">
         <h1>DrivenEats</h1>
         <p>Sua comida em 6 minutos</p>
+        <ion-icon name="bag-handle"></ion-icon>
+        <h3>R$ <span>00.0</span></h3>
     </div>
     <div class="container">
         <div class="corpo">
+            <div class="dados escondido">    
+                    <h1>DADOS DE ENTREGA</h1>
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="nome" name="nome"><br><br>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" class="endereco" name="endereco"><br><br>
+                    <label for="telefone">contato:</label>
+                    <input type="tel"  class="telefone" required placeholder="(xx) xxxxx-xxxx"><br><br>
+                    <button onclick="fecharPedido('dadosOk')">ok</button>                  
+            </div>
             <h2>Primeiro, seu prato</h2>
             <div class="pratos" data-identifier="dishes">
                 <div class="prato fonte" id="prato1" onclick="controleDePedido(id)"  data-identifier="food-option">
@@ -89,7 +101,8 @@
         
     </div>    
     <div class="barra-inferior">
-        <button><p>Selecione os 3 itens para fechar o pedido</p></button>
+        <button onclick="fecharPedido('pedidosOk')"><p>Selecione os 3 itens para fechar o pedido</p></button>
     </div>
     <script src="/js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>

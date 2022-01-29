@@ -9,6 +9,20 @@
     z-index: 2;
     
 }
+.barra-topo ion-icon{
+    position: absolute;
+    right: 70px;
+    top: 25px;
+    font-size: 30px;
+    color: white;
+}    
+.barra-topo h3{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    font-family: Righteous; 
+    color: white;
+}
 .barra-topo h1{
     font-family: Righteous;
     font-style: normal;
@@ -37,8 +51,47 @@
     width: 414px;
     height: calc(100vh - 93px);
     margin-top: 93px;
-    margin-bottom: 170px;
+    margin-bottom: 180px;
     
+}
+.dados{
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 200px;
+    height: 300px;
+    background: #50D074;
+    border-radius: 5%;
+    z-index: 2;
+    text-align: center;
+    
+}
+.dados h1{
+    margin-top: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.dados input{
+    position: absolute;
+    left: 120px;
+    margin-top: 35px;
+    
+}
+.dados label{ position: absolute;
+    left: 18px;
+    margin-top: 35px;
+    color: #FFFFFF;
+}
+.dados button{
+    position: absolute;
+    left: 150px;
+    bottom: 40px;
+    height: 30px;
+    width: 80px;
 }
 .corpo h2{
     margin-top: 27px;
@@ -187,4 +240,7 @@
     font-weight: normal;
     font-size: 20px;
     color: #FFFFFF;
+}
+.escondido{
+    display: none;
 }

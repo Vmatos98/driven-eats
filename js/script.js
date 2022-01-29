@@ -51,15 +51,32 @@ function controleDePedido(id){
         valor3 = parseFloat(valor3.toString().replace(',','.')); 
         console.log(valor3);
     }
+    valorTotal = valor1+valor2+valor3; //valor total do pedido
+    valorTotal = valorTotal.toFixed(2); //float com duas casas após o ponto
+    let valorAtual = document.querySelector('.barra-topo h3 span');
+    valorAtual.innerHTML = valorTotal;
     if(valor1 > 0 && valor2 > 0 && valor3 > 0){
-        valorTotal = valor1+valor2+valor3; //valor total do pedido
-        valorTotal = valorTotal.toFixed(2); //float com duas casas após o ponto
+        
         console.log(valorTotal);
         const elemento = document.querySelector(".barra-inferior button");
         elemento.innerHTML ="<span style='font-size:20px; color: #FFFFFF'>Fechar pedido</span>";
         elemento.style.background = "#32B72F";
-        
-        
+    }
 
+}
+
+function fecharPedido(estado){
+    if(valor1 > 0 && valor2 > 0 && valor3 > 0){
+        if(estado === 'pedidosOk'){
+            const notificacao = document.querySelector(".dados");
+            notificacao.classList.remove("escondido");
+        }
+        if(estado === 'dadosOk'){
+            const notificacao = document.querySelector(".dados");
+            notificacao.classList.add("escondido");
+        }
+    }
+    else{
+        alert("Você precisa selecionar 3 produtos");
     }
 }
