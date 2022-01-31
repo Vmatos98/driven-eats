@@ -1,7 +1,10 @@
 
+  body{
+    background: #E5E5E5;
+  }
 .barra-topo{
     position: fixed;
-    top: 0;
+    top: 0%;
     width: 100vw;
     height: 92px;
     background: #CF2B2B;
@@ -44,54 +47,88 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    background: #E5E5E5;
+    height: 100%;
 }
 .corpo{
    
     width: 414px;
-    height: calc(100vh - 93px);
+    height: calc(100% - 93px);
     margin-top: 93px;
-    margin-bottom: 180px;
-    
+    margin-bottom: 99px;
+    background: #E5E5E5;
 }
-.dados{
-    position: absolute;
+
+.confirmacao{
+    position: fixed;
     left: 20px;
     right: 20px;
     top: 200px;
-    height: 300px;
+    height: 353px;
     background: #50D074;
-    border-radius: 5%;
+    border-radius: 9px;
     z-index: 2;
-    text-align: center;
     
 }
-.dados h1{
-    margin-top: 10px;
+.confirmacao h1{
+    margin-top: 21px;
+    margin-bottom: 28px;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 22px;
-    line-height: 26px;
+    text-align: center;
     color: #FFFFFF;
 }
-.dados input{
-    position: absolute;
-    left: 120px;
-    margin-top: 35px;
-    
-}
-.dados label{ position: absolute;
-    left: 18px;
-    margin-top: 35px;
+.confirmacao p{
+    margin-left: 26px;
+    margin-bottom: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
     color: #FFFFFF;
 }
-.dados button{
+.confirmacao span{
     position: absolute;
-    left: 150px;
-    bottom: 40px;
-    height: 30px;
-    width: 80px;
+    right: 25px;
+   
+}
+.confirmacao h3{
+    margin-left: 26px;
+    margin-bottom: 24px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+.confirmar{
+    position: absolute;
+    width: 329px;
+    left: calc(50% - 329px/2);
+    height: 52px;
+    border-radius: 100px;
+    background: white;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #50D074;
+    border:none;
+}
+.cancelar{
+    margin-top: 52px;
+    background-color: #50D074;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    width: 329px;
+    left: calc(50% - 329px/2);
+    height: 52px;
+    border:none;
 }
 .corpo h2{
     margin-top: 27px;
@@ -102,6 +139,7 @@
     font-size: 26px;
     line-height: 32px;
     color: #333333;
+    
 }
 .pratos{
     
@@ -120,12 +158,19 @@
     background: white;
     border-radius: 9px;
 }
-.prato img, .bebida img{
+.imagem {
     width: 144px;
     height: 87px;
     padding: 0 14px;
     margin-top: 18px;
     border-radius: 4px;
+}
+.icon{
+    position: absolute;
+    right: 9.38%;
+    bottom: 9.38%;
+    height: 15,44px;
+    width: 15,44px;
 }
 .fonte h3{
     position: absolute;
@@ -209,7 +254,7 @@
     background: white;
     border-radius: 9px;
 }
-.sobremesa img{
+.sobremesa-img{
     width: 144px;
     height: 82px;
     padding: 0 14px;
@@ -234,6 +279,7 @@
     border-radius: 50px;
     background: #CBCBCB;
     text-align: center;
+    border: none;
 }
 .barra-inferior p{
     font-family: Roboto;
